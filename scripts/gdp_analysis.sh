@@ -1,0 +1,5 @@
+grep "\b2007\b" ~/SDC_workshop_20170826/shell/data/processed_data/gapminder_by_country/gapminder.txt > ~/SDC_workshop_20170826/shell/data/processed_data/gapminder_by_country/2007_data.txt
+sed -i 's/ /_/g' ~/SDC_workshop_20170826/shell/data/processed_data/gapminder_by_country/2007_data.txt
+sort -k6 -b -n ~/SDC_workshop_20170826/shell/data/processed_data/gapminder_by_country/2007_data.txt > ~/SDC_workshop_20170826/shell/data/processed_data/gapminder_by_country/2007_data_sorted.txt
+tail -10 ~/SDC_workshop_20170826/shell/data/processed_data/gapminder_by_country/2007_data_sorted.txt > ~/SDC_workshop_20170826/shell/analyses/2007_highest_gfp_02.txt
+head -10 ~/SDC_workshop_20170826/shell/data/processed_data/gapminder_by_country/2007_data_sorted.txt > ~/SDC_workshop_20170826/shell/analyses/2007_lowest_gfp_02.txt
